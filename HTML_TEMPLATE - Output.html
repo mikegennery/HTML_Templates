@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>HTML Template - Output</title>
+		<link rel="stylesheet" type="text/css" href="HTML_TEMPLATE.css">
+	</head>
+
+	<script>
+	
+	/** JAVASCRIPT **/
+	
+	"use strict";
+	
+	var controller = new output();
+	
+	function output()
+	{
+
+		this.addDetails = function()
+		{
+			
+			document.getElementById('noItems').style.display = 'none';
+			
+			var cName = document.getElementById('name').value;
+			var cAddress = document.getElementById('address').value;
+			var cPostCode = document.getElementById('postCode').value;
+			var cTelephone = document.getElementById('telephone').value;
+			var cEmail = document.getElementById('email').value;
+			
+			var outputList = "";
+			
+			/**
+			<section id="listItem" class="list">
+				<h2 id="heading1" class="mobileHeading">Name</h2>
+				<p id="list1"></p>
+				<h2 id="heading1" class="mobileHeading">Address</h2>
+				<p id="list2"></p>
+				<h2 id="heading1" class="mobileHeading">Postcode</h2>
+				<p id="list3"></p>
+				<h2 id="heading1" class="mobileHeading">Telephone</h2>
+				<p id="list4"></p>
+				<h2 id="heading1" class="mobileHeading">Email Address</h2>
+				<p id="list5"></p>
+			</section>
+			**/
+			
+			outputList += '<section id="listItem" class="list">';
+			outputList += '<h2 id="heading1" class="mobileHeading">Name</h2><p id="list1">';
+			outputList += cName + '</p>';
+			outputList += '<h2 id="heading1" class="mobileHeading">Address</h2><p id="list2">';
+			outputList += cAddress + '</p>';
+			outputList += '<h2 id="heading1" class="mobileHeading">Postcode</h2><p id="list3">';
+			outputList += cPostCode + '</p>';
+			outputList += '<h2 id="heading1" class="mobileHeading">Telephone</h2><p id="list4">';
+			outputList += cTelephone + '</p>';
+			outputList += '<h2 id="heading1" class="mobileHeading">Email Address</h2><p id="list5">';
+			outputList += cEmail + '</p>';			
+			outputList += '</section>';
+			
+			console.log(outputList);
+			document.getElementById('list').innerHTML += outputList;
+			
+		}
+		
+	}
+	
+	</script>
+	
+	</body>
+	
+		<div id="header">
+			<p id="titleImg"><img src="20HZ_20230218_140634_1.jpg" id="logo" /></p>
+			<h1>Header</h1>
+		</div>
+		
+		<div id="navigation">
+			
+			<ul id="navigation_ul">
+				<li><a href="HTML_TEMPLATE - Home.html">Home</a></li>
+				<li><a href="HTML_TEMPLATE - Blank.html">Blank</a></li>
+				<li><a href="HTML_TEMPLATE - Form.html">Form</a></li>
+				<li><a href="HTML_TEMPLATE - List.html">List</a></li>
+				<li><a href="HTML_TEMPLATE - Output.html">Output</a></li>																
+				<li><a href="">CONTACT</a></li>
+			</ul>
+
+		</div>
+
+		<div id="main">
+		
+		<div id="mainContent">
+		
+		<form>
+		
+		<div id ="formLeft">
+		
+		<!--
+		<label for=""></label>
+		<input type="text" id="" name="">
+		-->
+	
+		<div class="inputItem">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name">
+		</div>
+		
+		<div class="inputItem">
+		<label for="address">Address</label>
+		<input type="text" id="address" name="address">
+		</div>
+	
+		<div class="inputItem">
+		<label for="postCode">Post Code</label>
+		<input type="text" id="postCode" name="postCode">
+		</div>
+		
+		<br />
+		
+		</div>
+	
+		<div id ="formRight">
+		
+		<div class="inputItem">
+		<label for="telephone">Telephone</label>
+		<input type="text" id="telephone" name="telephone">
+		</div>
+
+		<div class="inputItem">	
+		<label for="email">Email Address</label>
+		<input type="text" id="email" name="email">
+		</div>
+
+		<br >
+		<br >
+		
+		<div class="inputItem">		
+		<button type="button" id="submit" name="submit" onclick="controller.addDetails()">SUBMIT</button>
+		</div>
+
+		</div>
+		
+		</form>
+		
+		</div>
+
+		</div>
+	
+		<div id="output">
+	
+		<h2>Output</h2>
+		
+		<div id="list">
+		
+			<div id="headings" class="list">
+				<h2 id="heading1">Name</h2>
+				<h2 id="heading2">Address</h2>				
+				<h2 id="heading3">Postcode</h2>		
+				<h2 id="heading4">Telephone</h2>
+				<h2 id="heading5">Email address</h2>				
+			</div>
+
+			<section id="noItems">
+				<p id="noItems">No items to display</p>
+			</section>
+					
+		</div>
+		
+		</div>
+		
+	</body>
+
+</html>

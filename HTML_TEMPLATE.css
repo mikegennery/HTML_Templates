@@ -1,0 +1,403 @@
+		body
+		{
+			font-family: Verdana, Arial, Georgia, sans-serif;
+			background-color: #d5f4e6;
+			margin: 0px;
+		}
+	
+
+
+	
+		/** HOME **/
+		
+		img
+		{
+			height: 4%;
+			width: 4%;
+			float: left;
+			padding: none;
+			padding-left: 20px;
+		}
+		
+		h1
+		{
+			display: inline;
+			padding-left: 20px;
+		}
+
+		h2
+		{
+			display: inline;
+			padding: 20px;
+			height: 100%;
+		}
+		
+		h3
+		{
+			display: inline;
+			padding: 20px;
+			align: center;
+			height: 100%;
+		}
+
+		p
+		{
+			display: block;
+			margin: 20px;
+			height: 100%;
+		}
+		
+		#header
+		{
+			background-color: #deeaee;
+			width: 100%;
+			padding-top: 5px;
+			padding-bottom: 25px;
+		}
+		
+		#navigation
+		{
+			display: block;
+			background-color: #e3eaa7;	
+			width: 100%;
+			height: 100%;
+			padding: 5px;
+		}
+
+		#navigation_ul
+		{
+			display: grid;
+			gap: 5px 5px;
+		}
+		
+		#navigation ul
+		{
+			list-style: none;
+			width: 100%;
+		}
+		
+		#navigation li
+		{
+			padding: 10px;
+		}
+	
+		#navigation ul li a:link, ul li a:visited  
+		{
+			font-weight: bold;
+			padding: 10px;
+			text-decoration: none;
+			background-color: #82b74b;
+			color: white;
+		}
+		
+		
+		
+		
+		/** MAIN CONTENT **/
+		
+		#main
+		{
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			max-height: 60%;
+			max-width: 100%;
+		}
+	
+		#mainContent
+		{
+			margin: 0px;
+			padding: 25px;
+			padding-bottom: 60px;
+			display: block;
+		}
+	
+
+
+	
+		/** SIDEBARS & FOOTER **/
+		
+		#leftSideBar
+		{
+			background-color: #e6e2d3;
+			float: left;
+			margin-right: 10px;
+		}
+
+		#rightSideBar
+		{
+			background-color: #f7786b;
+			float: right;
+			display: inline;
+			margin-left: 10px;					
+		}
+		
+		#leftSideBar, #rightSideBar
+		{
+			height: 100%;		
+			max-width: 20%;
+			padding-top: 20px;	
+		}
+		
+		#leftSideBar ul, #rightSideBar ul	
+		{
+			list-style: none;
+		}
+	
+		#leftSideBar li, #rightSideBar li	
+		{
+			display: block;
+			padding: 0px;
+		}
+		
+		#leftSideBar ul li a:link, #leftSideBar ul li a:visited, 
+		#rightSideBar ul li a:link, #rightSideBar ul li a:visited  
+		{	
+			display: block;
+			align: left;
+			padding: 0px;
+			color: black;
+		}
+		
+		#footer
+		{
+			background-color: #ffef96;
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+		}
+
+
+
+		
+		/** FORMS **/
+		
+		input
+		{
+			display: block;
+			width: 100%;
+		}
+		
+		label
+		{
+			font-weight: bold;
+			display: block;
+		}
+		
+		label.radio
+		{
+			display: inline;
+			position: absolute;
+			width: 50%;
+		}
+	
+		input.radio
+		{
+			float: left;
+			display: block;
+			position: relative;
+			width: 10%;
+		}
+		
+		#dob, #submit
+		{
+			width: auto;
+		}
+		
+		.inputItem
+		{
+			padding: 10px;
+		}
+		
+		.submit
+		{
+			font-size: 14px;
+			font-weight: bold;
+			padding: 20px;
+		}
+
+
+
+		/** LIST **/
+		
+		#list
+		{
+			width: 100%;
+			display: block;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#noItems
+		{
+			padding: 0px;
+			margin: 0px;
+			display: none;
+		}
+
+		
+		#headings h2
+		{
+			background-color: #ffef96;
+			padding: 0px;
+		}
+		
+		#listItem p
+		{
+			background-color: #c0ded9;
+			padding: 0px;
+			padding-bottom: 5px;
+			margin: 0px;
+		}		
+		
+		
+		
+		/** OUTPUT **/
+		
+		#output
+		{
+			margin: 10px;
+		}
+	
+
+
+	
+		/** MEDIA QUERIES **/
+		
+		@media only screen and (min-width: 200px)
+		{
+			
+			#titleImg
+			{
+				display: none;
+			}
+			
+			#navigation_ul
+			{
+				grid-template-columns: auto auto;
+			}
+			
+			#leftSideBar
+			{
+				display: none;
+			}		
+
+			#rightSideBar
+			{
+				display: none;
+			}				
+
+			#formLeft
+			{
+				width: 100%;
+				background-color: #d5f4e6;
+			}
+			
+			#formRight
+			{
+				float: left;
+				width: 100%;
+				background-color: #d5f4e6;
+			}
+
+			#headings
+			{
+				display: none;
+			}
+			
+			.list
+			{
+				display: block;
+				padding: 10px;
+				padding-bottom: 20px;
+			}
+		
+			.mobileHeading
+			{
+				display: block;
+				background-color: #ffef96;
+				margin: 0px;
+				padding: 0px;
+				font-size: 18px;
+			}
+			
+		}
+		
+		@media only screen and (min-width: 700px)
+		{
+			#navigation_ul
+			{
+				grid-template-columns: auto auto auto;
+			}			
+
+			#leftSideBar
+			{
+				display: block;
+			}		
+			
+			#rightSideBar
+			{
+				display: none;
+			}			
+
+			#formLeft
+			{			
+				float: left;
+				width: 50%;
+				height: 80%;
+				padding: 10px;
+			}
+		
+			#formRight
+			{			
+				float: right;
+				display: inline;
+				width: 40%;
+				padding: 10px;
+				height: 80%;
+			}
+
+			#headings
+			{
+				display: grid;
+			}
+			
+			.list
+			{
+				display: grid;
+				padding: 0px;
+				grid-template-columns: 20% 20% 20% 20% 20%;			
+			}
+			
+			.mobileHeading
+			{
+				display: none;
+			}
+			
+		}
+
+		@media only screen and (min-width: 900px)
+		{
+	
+			#titleImg
+			{
+				display: block;
+			}
+			
+			#navigation_ul
+			{
+				grid-template-columns: auto auto auto auto auto auto;
+			}			
+
+			#leftSideBar
+			{
+				display: block;
+			}		
+
+			#rightSideBar
+			{
+				display: inline;
+			}	
+			
+		}				
